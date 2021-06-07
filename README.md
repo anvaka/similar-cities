@@ -1,6 +1,6 @@
 # Similar cities
 
-This website shows cities that have similar road networks. 
+[This website](https://anvaka.github.io/similar-cities/) shows cities that have similar road networks. 
 
 ![grid similarities](https://i.imgur.com/BUZJ1Bl.png)
 
@@ -32,20 +32,19 @@ Intersection 2: Stop
 The entire walk can be labeled by sequence of intersection numbers: `1,2,3,2`. 
 
 Now, we remember that sequence `1,2,3,2` happened one time. Let's repeat the walking process
-a few thousand times, starting at arbitrary node. 
+a few thousand times, starting at arbitrary nodes. 
 
-Every time we get a sequence - we add plus one to the number of times we've seen this 
+Every time we get a sequence we add plus one to the number of times we've seen this 
 sequence before.
 
 Then we repeat the same process for the second city! At the end we get two counters of sequences,
 one for each city.
 
-We assume that the more times same sequence appears in both cities - the more similar are those cities.
+We assume that the more times the same sequence appears in both cities - the more similar are those cities. This doesn't take into account road lengths or directions. Just a general local structure of the walk.
 
-This doesn't take into account road lengths or directions. Just a general local structure of the walk.
-
-In practice, I took not 4 intersections, but 8. This gives approximately 4,000 possible unique sequences,
-and I use them to compare similarity of the graphs.
+In practice, I took not 4 intersections, but 8. This gives approximately 4,000 possible unique sequences.
+Each sequence has a reserved spot in a vector, with number of times the sequence appeared. The vectors are used
+to compute the generalized Jaccard similarity.
 
 # Data and code
 
