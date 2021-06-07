@@ -1,0 +1,37 @@
+{
+  "name": "similar-cities",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "start": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.12.1",
+    "miserables": "^2.0.0",
+    "ngraph.events": "^1.0.0",
+    "ngraph.forcelayout": "^3.1.0",
+    "ngraph.fromdot": "^6.0.1",
+    "ngraph.fromjson": "^3.0.0",
+    "ngraph.generators": "^19.0.0",
+    "ngraph.graph": "^19.1.0",
+    "rbush": "^3.0.1",
+    "rbush-knn": "^3.0.1",
+    "vue": "^2.6.12",
+    "vue-virtual-scroll-list": "^2.3.2",
+    "w-gl": "^0.19.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "stylus": "^0.54.8",
+    "stylus-loader": "^3.0.2",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
