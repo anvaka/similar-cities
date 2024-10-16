@@ -21,7 +21,7 @@
     "rbush-knn": "^3.0.1",
     "vue": "^2.6.12",
     "vue-virtual-scroll-list": "^2.3.2",
-    "w-gl": "^0.19.0"
+    "w-gl": "^0.21.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
